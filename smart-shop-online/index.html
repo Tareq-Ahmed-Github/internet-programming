@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- external css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- bootstrap style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <title>IIUC MART</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <a class="" href="">IIUC MART</a>
+            </div>
+            <div>
+                <a href="">Home</a>
+                <a href="">Product</a>
+                <a href="">Review</a>
+                <a href="">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- banner header -->
+    <div class="banner-container">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active"> 
+                    <img src="./Resources/banner/cute-stylish-children.jpg" class="d-block w-100" alt="..." height="450px"
+                        width="800px">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="card-title">First slide label</h5>
+                        <p class="card-text">Some representative placeholder content for the first slide.</p>
+                        <a href="#" class="btn bg-danger">Buy now</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./Resources/banner/woman-black-trousers-purple-blouse-laughs-leaning-stand-with-elegant-clothes-pink-background.jpg"
+                        class="d-block w-100" alt="..." height="450px" width="800px">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                        <a href="#" class="btn bg-danger">Buy now</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./Resources/banner/young-handsome-man-choosing-clothes-shop.jpg" class="d-block w-100" alt="..."
+                        height="450px" width="800px">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                        <a href="#" class="btn bg-danger">Buy now</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- products -->
+    <div class="product-container">
+        <div id="products" class=" row row-cols-3 p-3">
+            
+            
+        </div>
+        <div class="product-price-total mt-5 p-3">
+            <div class="row mb-3">
+                <label class="col-4" for="Price:">Price:</label>
+                <input class="col-8" type="text" disabled name="price-input" id="">
+            </div>
+            <div class="row mb-3">
+                <label class="col-4" for="Shipping::">Shipping:</label>
+                <input class="col-8" type="text" disabled name="shipping-input" id="">
+            </div>
+            <div class="row mb-3">
+                <label class="col-4" for="VAT:">VAT:</label>
+                <input class="col-8" type="text" disabled name="tax-input" id="">
+            </div>
+            <div class="row mb-3">
+                <label class="col-4" for="Total Price:">Total Price:</label>
+                <input class="col-8" type="text" disabled name="total-input" id="">
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-body">
+            <h1>SERVICES</h1>
+            <div>
+                <h>Baby Zone</h>
+                <p>baby exclusive clothes</p>
+            </div>
+            <div>
+                <h>Men's Corner</h>
+                <p>Men's exclusive clothes</p>
+            </div>
+            <div>
+                <h>Women's world</h>
+                <p>Women's exclusive clothes</p>
+            </div>
+        </div>
+        <div class="footer-body">
+            <h1>ABOUT</h1>
+            <div>
+                <h>Baby Zone</h>
+                <p>baby exclusive clothes</p>
+            </div>
+            <div>
+                <h>Men's Corner</h>
+                <p>Men's exclusive clothes</p>
+            </div>
+            <div>
+                <h>Women's world</h>
+                <p>Women's exclusive clothes</p>
+            </div>
+        </div>
+        <div class="footer-body">
+            <h1>CONTACT</h1>
+            <div>
+                <h>Baby Zone</h>
+                <p>baby exclusive clothes</p>
+            </div>
+            <div>
+                <h>Men's Corner</h>
+                <p>Men's exclusive clothes</p>
+            </div>
+            <div>
+                <h>Women's world</h>
+                <p>Women's exclusive clothes</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

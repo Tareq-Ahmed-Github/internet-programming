@@ -1,0 +1,74 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url(./../Resources/background/pexels-madison-inouye-1831234.jpg);
+}
+
+/* header */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: indigo;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 5px 10px;
+    color: white;
+}
+
+/* banner */
+
+.banner-container {
+    padding: 0px 200px;
+}
+
+/* products */
+.product-container {
+    padding: 50px 200px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.prod-btn {
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+.product-price-total {
+    background-color: antiquewhite;
+}
+
+.prod-card {
+    margin-top: 20px;
+    background-color: bisque;
+}
+.prod-card img{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+/* footer */
+footer {
+    background-color: slategray;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+}
+
+footer h {
+    font-size: 16px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+.footer-body {
+    padding: 50px;
+}
+
+.footer-body div:hover {
+    color: azure;
+}
