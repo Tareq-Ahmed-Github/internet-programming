@@ -32,14 +32,14 @@ let addToCart = (props) => {
             document.getElementById("total-products").value = totalProducts;
             price += parseFloat(element.price);
             document.getElementById("price-input").value = price.toFixed(2);
-            if (element.price > 500 && element.price < 800) {
-                shipping += 100;
+            if (price > 500 && price < 800) {
+                shipping = 100;
             }
-            else if (element.price > 800 && element.price < 1000) {
-                shipping += 150;
+            else if (price > 800 && price < 1000) {
+                shipping = 150;
             }
-            else if (element.price > 1000) {
-                shipping += 200;
+            else if (price > 1000) {
+                shipping = 200;
             }
             document.getElementById("shipping").value = shipping.toFixed(2);
             totalPrice = parseFloat(price + shipping);
@@ -58,10 +58,16 @@ function checkout() {
     if (totalPrice > 0) {
         Swal.fire({
             title: 'Order',
-            html: `Your total Price is ${totalPrice.toFixed(2)}`,
+            html: `Your total Price is ${totalPriceNtax.toFixed(2)}`,
             icon: 'success',
             confirmButtonText: 'Confirm'
         })
+        document.getElementById("total-products").value = '';
+        document.getElementById("price-input").value = '';
+        document.getElementById("shipping").value = '';
+        document.getElementById("total-input").value = '';
+        document.getElementById("vat").value = '';
+        document.getElementById("total-input-Ntax").value = '';
     }
     else {
         Swal.fire({
