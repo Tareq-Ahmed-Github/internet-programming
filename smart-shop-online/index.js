@@ -54,25 +54,42 @@ let addToCart = (props) => {
 }
 
 function checkout() {
-
     if (totalPrice > 0) {
-        Swal.fire({
-            title: 'Order',
-            html: `Your total Price is ${totalPriceNtax.toFixed(2)}`,
-            icon: 'success',
-            confirmButtonText: 'Confirm'
+        swal(`Your total Price is ${totalPriceNtax.toFixed(2)}`,'', 'info',{
+            buttons: {
+                cancel: "cancel",
+                catch: {
+                    text: "Confirm",
+                    value: "catch",
+                },
+            }
         })
+            .then((value) => {
+                switch (value) {
+                    case "catch":
+                        swal('Bravo!', 'Your product is on the way', 'success');
+                        break;
+                }
+            });
+
         document.getElementById("total-products").value = '';
         document.getElementById("price-input").value = '';
         document.getElementById("shipping").value = '';
         document.getElementById("total-input").value = '';
         document.getElementById("vat").value = '';
         document.getElementById("total-input-Ntax").value = '';
+        totalProducts = 0;
+        price = 0;
+        shipping = 0;
+        totalPrice = 0;
+        vat = 0;
+        totalPriceNtax = 0;
+
     }
     else {
         Swal.fire({
             tittle: 'Error',
-            text: 'Please select some items',
+            text: 'Your cart is empty, please add products to your cart.',
             icon: 'error',
             confirmButtonText: 'Ok'
         })
