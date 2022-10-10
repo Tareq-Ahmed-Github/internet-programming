@@ -8,13 +8,15 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 20px 50px;
-    background-color: indigo;
+    /* background-color: indigo; */
 }
 
 nav a {
     text-decoration: none;
     margin: 5px 10px;
     color: white;
+    /* font-weight: bold; */
+    /* font-size: 20px; */
 }
 
 /* banner */
@@ -28,7 +30,7 @@ nav a {
     padding: 50px 200px;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 30px;
+    /* gap: px; */
 }
 
 .prod-btn {
@@ -47,6 +49,19 @@ nav a {
 .prod-card img{
     margin-left: 30px;
     margin-top: 10px;
+}
+.checkout{
+    width: 100%;
+    padding: 5px 0px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(207, 6, 49);
+}
+.checkout:hover{
+    background-color: black;
+    /* color: black; */
+    /* border: none; */
 }
 
 /* footer */
