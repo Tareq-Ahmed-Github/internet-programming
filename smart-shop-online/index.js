@@ -4,7 +4,7 @@ fetch('https://fakestoreapi.com/products').then(response => response.json()).the
     product = data;
     product.slice(9, 18).map(prod => {
         const items = products.innerHTML + `
-            <div class="card prod-card mt-4">
+            <div class="card prod-card mt-4 bg-image hover-zoom">
                 <img src= ${prod.image} height="100px" width="100px">
                 <div class="card-body">
                     <h5 class="card-title">${prod.title.slice(0, 10)}</h5>
@@ -55,7 +55,7 @@ let addToCart = (props) => {
 
 function checkout() {
     if (totalPrice > 0) {
-        swal(`Your total Price is ${totalPriceNtax.toFixed(2)}`,'', 'info',{
+        swal(`Your total Price is $${totalPriceNtax.toFixed(2)}`, '', 'info', {
             buttons: {
                 cancel: "cancel",
                 catch: {
@@ -67,7 +67,7 @@ function checkout() {
             .then((value) => {
                 switch (value) {
                     case "catch":
-                        swal('Bravo!', 'Your product is on the way', 'success');
+                        swal('Bravo!', 'Thank you sir, your product is on the way.', 'success');
                         break;
                 }
             });
@@ -97,3 +97,27 @@ function checkout() {
 
     }
 }
+
+// upcoming products
+let upcomingProds = [];
+const upcoming = document.getElementById('upcoming-products');
+fetch('https://fakestoreapi.com/products').then(response => response.json()).then(data => {
+    upcomingProds = data;
+    upcomingProds.slice(6, 9).map(element => {
+        const elems = upcoming.innerHTML + `
+        <div class="card mt-4 mx-2">
+            <img src=${element.image} class="upcoming-img" height="100px" width="100px">
+            <div class="card-body">
+                    <h5 class="card-title">${element.title.slice(0, 10)}</h5>
+                    <p class="card-text">$<strong class="prod-one">${element.price}</strong></p>
+                    <p class="d-none">shipping <input id="shipping-cost">50</input></p>
+            </div>
+            <div class="upc-prod-btn">
+            <button class="btn btn-danger w-100" type="button" disabled>Coming soon</button>
+            </div>
+        </div>
+        `
+        upcoming.innerHTML = elems;
+    })
+
+})

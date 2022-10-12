@@ -7,21 +7,45 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 20px 100px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    background-color: black;
+    margin: 30px 150px;
     /* background-color: indigo; */
 }
 
-nav a {
-    text-decoration: none;
-    margin: 5px 10px;
+.mart-icon {
+    margin-top: 10px;
     color: white;
-    font-weight: bold;
-    font-size: 20px;
 }
+
+nav a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: white;
+    margin: 5px 0px;
+    padding: 15px 15px;
+    /* font-weight: bold; */
+    font-size: 16px;
+    border-radius: 5px;
+}
+
 nav a:hover {
-    color: black;
+    /* background-color: rgb(206, 3, 67); */
+    color: white;
+    border-radius: 5px;
     /* font-size: 24px; */
-    transition: ease-in-out 500ms;
+    transition: ease-in-out 100ms;
+}
+
+nav svg {}
+
+nav svg:hover {
+    background-color: rgb(206, 3, 67);
+    color: white;
+    border-radius: 5px;
+    /* font-size: 24px; */
+    transition: ease-in-out 100ms;
 }
 
 /* banner */
@@ -33,10 +57,9 @@ nav a:hover {
 
 /* products */
 .product-container {
-    padding: 50px 100px;
+    padding: 0px 100px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    /* gap: px; */
+    grid-template-columns: 8fr 4fr;
 }
 
 .prod-btn {
@@ -52,11 +75,13 @@ nav a:hover {
     margin-top: 20px;
     background-color: bisque;
 }
-.prod-card img{
+
+.prod-card img {
     margin-left: 30px;
     margin-top: 10px;
 }
-.checkout{
+
+.checkout {
     width: 100%;
     padding: 5px 0px;
     border: none;
@@ -64,11 +89,64 @@ nav a:hover {
     color: white;
     background-color: rgb(207, 6, 49);
 }
-.checkout:hover{
+
+.checkout:hover {
     background-color: black;
+    /* transition: ease-in-out 200ms; */
     /* color: black; */
     /* border: none; */
 }
+
+/* upcoming products */
+#upcoming-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0px 150px;
+    margin-bottom: 100px;
+}
+
+.upcoming-img {
+    margin: 10px 100px;
+}
+
+.upc-prod-btn {
+    padding: 5px 10px;
+}
+
+/* reviews container */
+#review-container {
+    padding: 0px 100px;
+    padding-bottom: 100px;
+}
+
+.review {
+    /* margin: 200px; */
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.review p {
+    margin: 0px 5px;
+}
+
+.review h4 {
+    margin: 0px 5px;
+}
+
+.review-slide {
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    display: flex;
+    justify-content: space-around;
+}
+
+.review img {
+    border-radius: 500px;
+}
+
 
 /* footer */
 footer {

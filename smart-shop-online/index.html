@@ -16,6 +16,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <!-- animate -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- MDB -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" /> -->
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- fortawesome -->
+    <script src="https://kit.fontawesome.com/b20e1785aa.js" crossorigin="anonymous"></script>
 
     <title>IIUC MART</title>
 </head>
@@ -24,27 +32,45 @@
     <header>
         <nav>
             <div>
-                <a class="" href="">IIUC MART</a>
+                <h5 class="mart-icon">IIUC MART</h5>
             </div>
             <div>
-                <a href="">Home</a>
-                <a href="">Product</a>
-                <a href="">Review</a>
-                <a href="">Contact</a>
+                <a id="home" href="#home">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+                        <path fill="currentColor"
+                            d="M8 42V18L24.1 6 40 18v24H28.3V27.75h-8.65V42Zm3-3h5.65V24.75H31.3V39H37V19.5L24.1 9.75 11 19.5Zm13-14.65Z" />
+                    </svg></a>
+                <a class="" href="#products">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+                        <path fill="currentColor"
+                            d="M11 44q-1.2 0-2.1-.9Q8 42.2 8 41V15q0-1.2.9-2.1.9-.9 2.1-.9h5.5v-.5q0-3.15 2.175-5.325Q20.85 4 24 4q3.15 0 5.325 2.175Q31.5 8.35 31.5 11.5v.5H37q1.2 0 2.1.9.9.9.9 2.1v26q0 1.2-.9 2.1-.9.9-2.1.9Zm0-3h26V15h-5.5v4.5q0 .65-.425 1.075Q30.65 21 30 21q-.65 0-1.075-.425-.425-.425-.425-1.075V15h-9v4.5q0 .65-.425 1.075Q18.65 21 18 21q-.65 0-1.075-.425-.425-.425-.425-1.075V15H11v26Zm8.5-29h9v-.5q0-1.9-1.3-3.2Q25.9 7 24 7q-1.9 0-3.2 1.3-1.3 1.3-1.3 3.2ZM11 41V15v26Z" />
+                    </svg></a>
+                <a class="" href="#review-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+                        <path fill="currentColor"
+                            d="m24 29.2 2.8-6.4 6.4-2.8-6.4-2.8-2.8-6.4-2.8 6.4-6.4 2.8 6.4 2.8ZM4 44V7q0-1.15.9-2.075Q5.8 4 7 4h34q1.15 0 2.075.925Q44 5.85 44 7v26q0 1.15-.925 2.075Q42.15 36 41 36H12Zm3-7.25L10.75 33H41V7H7ZM7 7v29.75Z" />
+                    </svg>
+                </a>
+                <a class="" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+                        <path fill="currentColor"
+                            d="M39.75 42q-6.1 0-12.125-3T16.8 31.2Q12 26.4 9 20.375 6 14.35 6 8.25q0-.95.65-1.6Q7.3 6 8.25 6h7q.7 0 1.225.475.525.475.675 1.275l1.35 6.3q.1.7-.025 1.275t-.525.975l-5 5.05q2.8 4.65 6.275 8.1Q22.7 32.9 27.1 35.3l4.75-4.9q.5-.55 1.15-.775.65-.225 1.3-.075l5.95 1.3q.75.15 1.25.75T42 33v6.75q0 .95-.65 1.6-.65.65-1.6.65Zm-28.3-23.4 4.05-4.1L14.35 9H9q0 1.95.6 4.275t1.85 5.325ZM29.9 36.75q2.05.95 4.45 1.55 2.4.6 4.65.7v-5.35l-5.15-1.05ZM11.45 18.6ZM29.9 36.75Z" />
+                    </svg>
+                </a>
             </div>
         </nav>
     </header>
 
     <!-- banner header -->
     <div class="banner-container">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div id="carouselExampleIndicators" class="carousel slide" data-mdb-ride="carousel">
 
-            <div class="carousel-indicators bg-black mx-5 rounded">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            <div class="carousel-indicators bg-black rounded-5">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                     aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
 
@@ -115,20 +141,23 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="prev">
-                <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="next">
-                <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </div>
 
     <!-- products -->
+    <div class="d-flex justify-content-center mt-5">
+        <h1>PRODUCTS</h1>
+    </div>
     <div class="product-container">
         <div id="products" class=" row row-cols-3 p-3">
 
@@ -175,6 +204,177 @@
             <button class="checkout" onclick="checkout()">Checkout</button>
         </div>
     </div>
+
+    <!-- upcoming products -->
+    <div class="d-flex justify-content-center mt-5">
+        <h1>UPCOMING PRODUCTS</h1>
+    </div>
+    <div id="upcoming-products">
+
+    </div>
+
+    <!-- Reviews -->
+    <div id="review-container">
+        <div class="d-flex justify-content-center my-5">
+            <h1>Customer Reviews</h1>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="review-slide">
+                        <div class="review d-block">
+                            <img src="./Resources/reviews/35af6a41332353.57a1ce913e889.jpg" alt="" height="50px"
+                                width="50px" />
+                            <h4>Mike John</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, aliquid?</p>
+                            <span class="text-warning">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
+                        <div class="review d-block">
+                            <img src="./Resources/reviews/aa40d930254455.561adc2511277.jpg" alt="" height="50px"
+                                width="50px" />
+                            <h4>David boston</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, aliquid?</p>
+                            <p>
+                                <span class="text-warning">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="review d-block">
+                            <img src="./Resources/reviews/photo-1500648767791-00dcc994a43e.jfif" alt="" height="50px"
+                                width="50px" />
+                            <h4>Adam smith</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, aliquid?</p>
+                            <p>
+                                <span class="text-warning">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="review-slide">
+                        <div class="review d-block">
+                            <img src="./Resources/reviews/photo-1500648767791-00dcc994a43e.jfif" alt="" height="50px"
+                                width="50px" />
+                            <h4>Adam smith</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, aliquid?</p>
+                            <p>
+                                <span class="text-warning">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="review d-block">
+                            <img src="./Resources/reviews/35af6a41332353.57a1ce913e889.jpg" alt="" height="50px"
+                                width="50px" />
+                            <h4>Mike John</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, aliquid?</p>
+                            <span class="text-warning">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
+                        <div class="review d-block">
+                            <img src="./Resources/reviews/aa40d930254455.561adc2511277.jpg" alt="" height="50px"
+                                width="50px" />
+                            <h4>David boston</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, aliquid?</p>
+                            <p>
+                                <span class="text-warning">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="review-slide">
+                        <div class="review d-block">
+                            <img src="./Resources/reviews/aa40d930254455.561adc2511277.jpg" alt="" height="50px"
+                                width="50px" />
+                            <h4>David boston</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, aliquid?</p>
+                            <p>
+                                <span class="text-warning">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="review d-block">
+                            <img src="./Resources/reviews/photo-1500648767791-00dcc994a43e.jfif" alt="" height="50px"
+                                width="50px" />
+                            <h4>Adam smith</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, aliquid?</p>
+                            <p>
+                                <span class="text-warning">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="review d-block">
+                            <img src="./Resources/reviews/35af6a41332353.57a1ce913e889.jpg" alt="" height="50px"
+                                width="50px" />
+                            <h4>Mike John</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, aliquid?</p>
+                            <span class="text-warning">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
 
     <!-- footer -->
     <footer>
@@ -235,6 +435,8 @@
     <!-- sweet alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- MDB -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script> -->
 
 
 </body>
