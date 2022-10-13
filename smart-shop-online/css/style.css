@@ -50,6 +50,10 @@ nav svg:hover {
 
 /* banner */
 
+.iiuc-banner img{
+    margin: 0px 100px;
+}
+
 .banner-container {
     padding: 0px 100px;
     padding-top: 5px;
