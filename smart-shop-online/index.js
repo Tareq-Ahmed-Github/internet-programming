@@ -12,7 +12,7 @@ fetch('https://fakestoreapi.com/products').then(response => response.json()).the
                     <p class="d-none">shipping <input id="shipping-cost">50</input></p>
                 </div>
                 <div class="  prod-btn border-0">
-                    <button class="btn btn-danger w-100" type="button" onClick="addToCart(${prod.id})">Add To Cart</button>
+                    <button class="btn btn-design btn-danger w-100" type="button" onClick="addToCart(${prod.id})">Add To Cart</button>
                 </div>
             </div>
             `;
@@ -121,3 +121,4 @@ fetch('https://fakestoreapi.com/products').then(response => response.json()).the
     })
 
 })
+
