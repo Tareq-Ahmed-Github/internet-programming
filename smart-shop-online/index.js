@@ -32,13 +32,13 @@ let addToCart = (props) => {
             document.getElementById("total-products").value = totalProducts;
             price += parseFloat(element.price);
             document.getElementById("price-input").value = price.toFixed(2);
-            if (price > 500 && price < 800) {
+            if (price >= 500 && price < 800) {
                 shipping = 100;
             }
-            else if (price > 800 && price < 1000) {
+            else if (price >= 800 && price < 1000) {
                 shipping = 150;
             }
-            else if (price > 1000) {
+            else if (price >= 1000) {
                 shipping = 200;
             }
             document.getElementById("shipping").value = shipping.toFixed(2);

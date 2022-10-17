@@ -80,7 +80,7 @@ nav a:hover {
     font-family: "montserrat", sans-serif;
     text-transform: uppercase;
     background-size: 200%;
-    background-image: linear-gradient(to left, #ff123e, #000000, #ff123e);
+    background-image: linear-gradient(to left, #d41b02, #000000, #d41b02);
 }
 
 .btn-design:hover {
@@ -94,7 +94,7 @@ nav a:hover {
     border: none;
     border-radius: 5px;
     color: white;
-    background-image: linear-gradient(to left, #ff123e, #000000, #ff123e);
+    background-image: linear-gradient(to left, #d41b02, #000000, #d41b02);
     background-size: 200%;
     text-transform: uppercase;
 }
@@ -154,13 +154,31 @@ nav a:hover {
     border-radius: 500px;
 }
 
+/* contact form */
+#contact{
+    padding: 50px 200px;
+}
+.contact-form p{
+    line-height: 70%;
+}
+.contact-form a{
+    text-decoration: none;
+    color: white;
+    font-size: 120%;
+    margin: 0px 5px;
+}
+.contact-form a:hover{
+    color: white;
+    opacity: 0.6;
+}
+
 
 /* footer */
 footer {
     background-color: slategray;
     display: flex;
     justify-content: space-between;
-    padding: 50px 100px;
+    padding: 20px 100px;
 }
 
 footer h {
@@ -177,4 +195,17 @@ footer p {
 
 .footer-body div:hover {
     color: azure;
+}
+.footer-menu{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    font-size: 120%;
+}
+.footer-menu a{
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+    font-size: 16px;
+}
+.footer-menu a:hover{
+    color: white;
 }
